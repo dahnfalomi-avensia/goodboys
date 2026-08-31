@@ -7,8 +7,8 @@ const EXTENSION_BY_CONTENT_TYPE: Record<string, string> = {
   "image/gif": "gif",
 };
 
-export function isSupportedPhoto(file: File): boolean {
-  return file.type in EXTENSION_BY_CONTENT_TYPE && file.size > 0 && file.size <= MAX_PHOTO_BYTES;
+export function isSupportedPhotoType(file: File): boolean {
+  return file.type in EXTENSION_BY_CONTENT_TYPE;
 }
 
 export async function uploadBusinessPhoto(file: File): Promise<string> {

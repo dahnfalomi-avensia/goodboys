@@ -1,4 +1,5 @@
 import { createBusiness } from "./actions";
+import { SubmitButton } from "./submit-button";
 
 export default async function ListBusinessPage({
   searchParams,
@@ -79,14 +80,12 @@ export default async function ListBusinessPage({
             accept="image/jpeg,image/png,image/webp,image/gif"
             className="text-sm text-zinc-600 file:mr-3 file:rounded-full file:border-0 file:bg-zinc-950 file:px-4 file:py-2 file:text-sm file:font-medium file:text-white dark:text-zinc-400 dark:file:bg-zinc-50 dark:file:text-zinc-950"
           />
+          <span className="text-xs font-normal text-zinc-500 dark:text-zinc-500">
+            JPEG, PNG, WEBP, or GIF, up to 5MB.
+          </span>
         </label>
 
-        <button
-          type="submit"
-          className="mt-2 w-full rounded-full bg-amber-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-amber-700 sm:w-auto"
-        >
-          Submit listing
-        </button>
+        <SubmitButton />
       </form>
     </div>
   );
