@@ -43,7 +43,7 @@
 		{
 			"bucket_name": "goodboys-media",
 			"binding": "goodboys_media",
-			"remote": false
+			"remote": true
 		}
 	]
 }
