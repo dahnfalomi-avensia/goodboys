@@ -4,6 +4,7 @@ export type Business = {
   category: string;
   ownerName: string;
   description: string;
+  photoKey?: string | null;
 };
 
 // Placeholder listings so the landing page can show what a real

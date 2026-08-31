@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#businesses", label: "Browse" },
-  { href: "#how-it-works", label: "How it works" },
+  { href: "/#businesses", label: "Browse" },
+  { href: "/#how-it-works", label: "How it works" },
 ];
 
 export function SiteHeader() {
@@ -25,12 +25,12 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <a
-          href="#how-it-works"
+        <Link
+          href="/list"
           className="rounded-full bg-amber-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-700"
         >
           List your business
-        </a>
+        </Link>
       </div>
     </header>
   );

@@ -18,7 +18,7 @@ export function Hero() {
             Browse businesses
           </a>
           <a
-            href="#how-it-works"
+            href="/list"
             className="w-full rounded-full border border-zinc-950/10 px-6 py-3 text-sm font-medium text-zinc-950 transition-colors hover:bg-zinc-950/[.04] sm:w-auto dark:border-zinc-50/15 dark:text-zinc-50 dark:hover:bg-zinc-50/[.06]"
           >
             List your business

@@ -1,7 +1,9 @@
-import { placeholderBusinesses } from "@/lib/placeholder-businesses";
+import { getFeaturedBusinesses } from "@/lib/businesses";
 import { BusinessCard } from "@/components/business-card";
 
-export function FeaturedBusinesses() {
+export async function FeaturedBusinesses() {
+  const businesses = await getFeaturedBusinesses();
+
   return (
     <section id="businesses" className="mx-auto w-full max-w-6xl px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-2xl text-center">
@@ -15,7 +17,7 @@ export function FeaturedBusinesses() {
       </div>
 
       <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {placeholderBusinesses.map((business) => (
+        {businesses.map((business) => (
           <BusinessCard key={business.id} business={business} />
         ))}
       </div>

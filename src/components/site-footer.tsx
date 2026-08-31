@@ -8,13 +8,13 @@ export function SiteFooter() {
 
         <nav className="flex items-center gap-6">
           <a
-            href="#businesses"
+            href="/#businesses"
             className="text-sm text-zinc-600 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50"
           >
             Browse
           </a>
           <a
-            href="#how-it-works"
+            href="/#how-it-works"
             className="text-sm text-zinc-600 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50"
           >
             How it works
